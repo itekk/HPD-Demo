@@ -1,0 +1,13 @@
+# OS noise
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor noise
+.idea/
+*.swp
+*.swo
+
+# Logs and temp
+*.log
+tmp/

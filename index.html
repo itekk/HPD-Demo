@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="HPD Demo - a sample static site used to demonstrate AI-assisted development and automated deployment.">
+  <title>HPD Demo | AI-Assisted Development</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <!-- ============================================================
+       Site header
+       ============================================================ -->
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a class="brand" href="#top" aria-label="HPD Demo home">
+        <span class="brand__mark" aria-hidden="true">H</span>
+        <span class="brand__name">HPD<span class="brand__accent">Demo</span></span>
+      </a>
+
+      <nav class="nav" aria-label="Main navigation">
+        <ul class="nav__list">
+          <li class="nav__item"><a class="nav__link" href="#features">Features</a></li>
+          <li class="nav__item"><a class="nav__link" href="#stats">Impact</a></li>
+          <li class="nav__item"><a class="nav__link" href="#workflow">Workflow</a></li>
+          <li class="nav__item"><a class="nav__link" href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <button
+        class="theme-toggle"
+        type="button"
+        id="themeToggle"
+        aria-label="Switch to dark theme"
+        aria-pressed="false">
+        <span class="theme-toggle__icon" aria-hidden="true">&#9790;</span>
+      </button>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- ============================================================
+         Hero
+         ============================================================ -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container hero__inner">
+        <p class="hero__eyebrow">Prompt &rarr; Commit &rarr; Deploy</p>
+        <h1 class="hero__title" id="hero-title">
+          Ship changes to this page <span class="hero__highlight">with a single prompt</span>
+        </h1>
+        <p class="hero__subtitle">
+          This is a live sample site. Describe the change you want, let the AI assistant write the
+          code against our documented standards, and watch the pipeline deploy it automatically.
+        </p>
+        <div class="hero__actions">
+          <a class="button button--primary" href="#features">Explore the demo</a>
+          <a class="button button--ghost" href="#workflow">See the workflow</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         Feature cards
+         ============================================================ -->
+    <section class="section" id="features" aria-labelledby="features-title">
+      <div class="container">
+        <header class="section__header">
+          <h2 class="section__title" id="features-title">What this demo shows</h2>
+          <p class="section__subtitle">
+            Every card below was written to the same rules documented in the repository.
+          </p>
+        </header>
+
+        <div class="card-grid">
+          <article class="card">
+            <div class="card__icon" aria-hidden="true">&#9998;</div>
+            <h3 class="card__title">Prompt-driven edits</h3>
+            <p class="card__text">
+              Ask in plain English for a new section, a colour change, or a bug fix. The assistant
+              edits the real files in this repository.
+            </p>
+          </article>
+
+          <article class="card">
+            <div class="card__icon" aria-hidden="true">&#9878;</div>
+            <h3 class="card__title">Standards enforced</h3>
+            <p class="card__text">
+              Repository instructions tell the assistant how we name classes, structure markup, and
+              use design tokens, so generated code matches the existing codebase.
+            </p>
+          </article>
+
+          <article class="card">
+            <div class="card__icon" aria-hidden="true">&#9889;</div>
+            <h3 class="card__title">Automated deployment</h3>
+            <p class="card__text">
+              A push to the main branch triggers the workflow and publishes the updated site to
+              GitHub Pages without any manual steps.
+            </p>
+          </article>
+
+          <article class="card">
+            <div class="card__icon" aria-hidden="true">&#9781;</div>
+            <h3 class="card__title">Zero build tooling</h3>
+            <p class="card__text">
+              Plain HTML, CSS, and JavaScript. Nothing to install, nothing to compile, and the
+              whole change is easy to read in a pull request diff.
+            </p>
+          </article>
+
+          <article class="card">
+            <div class="card__icon" aria-hidden="true">&#9855;</div>
+            <h3 class="card__title">Accessible by default</h3>
+            <p class="card__text">
+              Semantic landmarks, labelled controls, and visible focus states are part of the
+              standards, not an afterthought.
+            </p>
+          </article>
+
+          <article class="card">
+            <div class="card__icon" aria-hidden="true">&#9728;</div>
+            <h3 class="card__title">Theme aware</h3>
+            <p class="card__text">
+              Light and dark themes are driven entirely by CSS custom properties defined in one
+              place, so a palette change is a one-file edit.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         Stats
+         ============================================================ -->
+    <section class="section section--muted" id="stats" aria-labelledby="stats-title">
+      <div class="container">
+        <header class="section__header">
+          <h2 class="section__title" id="stats-title">Why teams care</h2>
+          <p class="section__subtitle">Illustrative figures for this demonstration.</p>
+        </header>
+
+        <dl class="stat-grid">
+          <div class="stat">
+            <dt class="stat__label">Faster first draft</dt>
+            <dd class="stat__value"><span data-count-to="70">0</span><span class="stat__unit">%</span></dd>
+          </div>
+          <div class="stat">
+            <dt class="stat__label">Minutes to deploy</dt>
+            <dd class="stat__value"><span class="stat__unit">&lt;</span><span data-count-to="2">0</span></dd>
+          </div>
+          <div class="stat">
+            <dt class="stat__label">Manual release steps</dt>
+            <dd class="stat__value"><span data-count-to="0">0</span></dd>
+          </div>
+          <div class="stat">
+            <dt class="stat__label">Standards documented</dt>
+            <dd class="stat__value"><span data-count-to="100">0</span><span class="stat__unit">%</span></dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         Workflow steps
+         ============================================================ -->
+    <section class="section" id="workflow" aria-labelledby="workflow-title">
+      <div class="container">
+        <header class="section__header">
+          <h2 class="section__title" id="workflow-title">How a change reaches production</h2>
+          <p class="section__subtitle">Four steps, one of which is a sentence of English.</p>
+        </header>
+
+        <ol class="steps">
+          <li class="steps__item">
+            <span class="steps__number" aria-hidden="true">1</span>
+            <h3 class="steps__title">Describe the change</h3>
+            <p class="steps__text">
+              Write the request in the chat panel, for example
+              &ldquo;add a testimonials section below the stats&rdquo;.
+            </p>
+          </li>
+          <li class="steps__item">
+            <span class="steps__number" aria-hidden="true">2</span>
+            <h3 class="steps__title">Assistant reads the standards</h3>
+            <p class="steps__text">
+              Repository instructions are loaded automatically and shape the generated markup,
+              styles, and scripts.
+            </p>
+          </li>
+          <li class="steps__item">
+            <span class="steps__number" aria-hidden="true">3</span>
+            <h3 class="steps__title">Review the diff</h3>
+            <p class="steps__text">
+              The change lands as an ordinary commit or pull request that a human approves.
+            </p>
+          </li>
+          <li class="steps__item">
+            <span class="steps__number" aria-hidden="true">4</span>
+            <h3 class="steps__title">Pipeline deploys</h3>
+            <p class="steps__text">
+              The workflow publishes the site to GitHub Pages and the live URL updates on its own.
+            </p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         Contact
+         ============================================================ -->
+    <section class="section section--muted" id="contact" aria-labelledby="contact-title">
+      <div class="container container--narrow">
+        <header class="section__header">
+          <h2 class="section__title" id="contact-title">Send a note</h2>
+          <p class="section__subtitle">
+            A demo form. Nothing is transmitted &mdash; submissions are handled in the browser.
+          </p>
+        </header>
+
+        <form class="form" id="contactForm" novalidate>
+          <div class="form__field">
+            <label class="form__label" for="name">Name</label>
+            <input class="form__input" type="text" id="name" name="name" required autocomplete="name">
+          </div>
+
+          <div class="form__field">
+            <label class="form__label" for="email">Email</label>
+            <input class="form__input" type="email" id="email" name="email" required autocomplete="email">
+          </div>
+
+          <div class="form__field">
+            <label class="form__label" for="message">Message</label>
+            <textarea class="form__input form__input--textarea" id="message" name="message" rows="4" required></textarea>
+          </div>
+
+          <button class="button button--primary" type="submit">Send message</button>
+          <p class="form__status" id="formStatus" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============================================================
+       Site footer
+       ============================================================ -->
+  <footer class="site-footer">
+    <div class="container site-footer__inner">
+      <p class="site-footer__text">HPD Demo &mdash; sample project for AI-assisted development.</p>
+      <p class="site-footer__text site-footer__text--muted">
+        Built with plain HTML, CSS, and JavaScript. Deployed automatically from the main branch.
+      </p>
+    </div>
+  </footer>
+
+  <script type="module" src="assets/js/main.js"></script>
+</body>
+</html>
