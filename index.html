@@ -22,6 +22,7 @@
         <ul class="nav__list">
           <li class="nav__item"><a class="nav__link" href="#features">Features</a></li>
           <li class="nav__item"><a class="nav__link" href="#stats">Impact</a></li>
+          <li class="nav__item"><a class="nav__link" href="#testimonials">Testimonials</a></li>
           <li class="nav__item"><a class="nav__link" href="#workflow">Workflow</a></li>
           <li class="nav__item"><a class="nav__link" href="#contact">Contact</a></li>
         </ul>
@@ -161,6 +162,38 @@
     </section>
 
     <!-- ============================================================
+         Testimonials
+         ============================================================ -->
+    <section class="section" id="testimonials" aria-labelledby="testimonials-title">
+      <div class="container">
+        <header class="section__header">
+          <h2 class="section__title" id="testimonials-title">What teams are saying</h2>
+          <p class="section__subtitle">Illustrative feedback from teams using a prompt-first workflow.</p>
+        </header>
+
+        <div class="card-grid">
+          <article class="card">
+            <h3 class="card__title">Maya Chen</h3>
+            <p class="card__text">&ldquo;The instructions keep every change consistent while still letting us move from idea to working page in minutes.&rdquo;</p>
+            <p class="card__text">Product designer</p>
+          </article>
+
+          <article class="card">
+            <h3 class="card__title">Jordan Ellis</h3>
+            <p class="card__text">&ldquo;Reviewing the diff is simple because the site stays intentionally small, readable, and free of build surprises.&rdquo;</p>
+            <p class="card__text">Engineering lead</p>
+          </article>
+
+          <article class="card">
+            <h3 class="card__title">Priya Nair</h3>
+            <p class="card__text">&ldquo;We can demonstrate a real deployment loop without hiding the important parts behind a framework.&rdquo;</p>
+            <p class="card__text">Developer advocate</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
          Workflow steps
          ============================================================ -->
     <section class="section" id="workflow" aria-labelledby="workflow-title">
@@ -174,32 +207,22 @@
           <li class="steps__item">
             <span class="steps__number" aria-hidden="true">1</span>
             <h3 class="steps__title">Describe the change</h3>
-            <p class="steps__text">
-              Write the request in the chat panel, for example
-              &ldquo;add a testimonials section below the stats&rdquo;.
-            </p>
+            <p class="steps__text">Write the request in the chat panel, for example &ldquo;add a testimonials section below the stats&rdquo;.</p>
           </li>
           <li class="steps__item">
             <span class="steps__number" aria-hidden="true">2</span>
             <h3 class="steps__title">Assistant reads the standards</h3>
-            <p class="steps__text">
-              Repository instructions are loaded automatically and shape the generated markup,
-              styles, and scripts.
-            </p>
+            <p class="steps__text">Repository instructions are loaded automatically and shape the generated markup, styles, and scripts.</p>
           </li>
           <li class="steps__item">
             <span class="steps__number" aria-hidden="true">3</span>
             <h3 class="steps__title">Review the diff</h3>
-            <p class="steps__text">
-              The change lands as an ordinary commit or pull request that a human approves.
-            </p>
+            <p class="steps__text">The change lands as an ordinary commit or pull request that a human approves.</p>
           </li>
           <li class="steps__item">
             <span class="steps__number" aria-hidden="true">4</span>
             <h3 class="steps__title">Pipeline deploys</h3>
-            <p class="steps__text">
-              The workflow publishes the site to GitHub Pages and the live URL updates on its own.
-            </p>
+            <p class="steps__text">The workflow publishes the site to GitHub Pages and the live URL updates on its own.</p>
           </li>
         </ol>
       </div>
