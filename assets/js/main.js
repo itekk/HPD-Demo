@@ -163,9 +163,10 @@ function initStatCounters() {
 function validateContactForm(form) {
   const name = form.elements.name.value.trim();
   const email = form.elements.email.value.trim();
+  const phone = form.elements.phone.value.trim();
   const message = form.elements.message.value.trim();
 
-  if (name === '' || email === '' || message === '') {
+  if (name === '' || email === '' || phone === '' || message === '') {
     return 'Please fill in every field.';
   }
 
