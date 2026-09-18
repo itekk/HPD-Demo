@@ -8,7 +8,7 @@ The machine-facing copies are wired up so tools pick them up automatically:
 | File                                       | Read by                                              |
 | ------------------------------------------ | ---------------------------------------------------- |
 | `.github/copilot-instructions.md`          | GitHub Copilot Chat, Copilot code review, Copilot coding agent |
-| `.github/instructions/*.instructions.md`   | Copilot, scoped per file type via `applyTo`          |
+| `.github/instructions/*.instructions.md`   | Copilot coding agent and code review, scoped by `applyTo` |
 | `AGENTS.md`                                | Other AI coding agents that follow the AGENTS.md convention |
 | `.editorconfig`                            | The editor itself                                    |
 
